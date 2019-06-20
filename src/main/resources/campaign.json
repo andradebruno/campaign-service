@@ -1,0 +1,15 @@
+[
+  { "campaignId" : "Campaign-01",
+    "campaignName" : "Campaign 1" ,
+    "teamId" : "Team-01",
+    "campaignStartDate" : "2017-10-01",
+    "campaignEndDate" : "2017-10-03"
+  },
+
+  { "campaignId" : "Campaign-02",
+    "campaignName" : "Campaign 2" ,
+    "teamId" : "Team-02",
+    "campaignStartDate" : "2017-10-01",
+    "campaignEndDate" : "2017-10-02"
+  }
+]
