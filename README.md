@@ -10,7 +10,7 @@
 
 - A aplicação também possui um _broker_ _embbeded_ para gerenciamento de filas/tópicos.
 
-##Tecnologias utilizadas:
+## Tecnologias utilizadas:
 
 - Java 8
 
