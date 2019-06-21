@@ -14,23 +14,23 @@
 
 - Java 8
 
-- Maven: Na construção do projeto e gerenciamento dos _frameworks_ utilizados
+- Maven: utilizado na construção do projeto e gerenciamento dos _frameworks_ utilizados
 
-- Spring Boot: Na construção do projeto _Spring_
+- Spring Boot: utilizado na construção do projeto _Spring_
 
-- Spring Cloud Feign: Utilizado para a integração entre microserviços.
+- Spring Cloud Feign: utilizado para a integração entre microserviços.
 
-- Spring Cloud Hytrix: Utilizado para criação de métodos de fallback, caso um microserviço esteja _down_
+- Spring Cloud Hytrix: utilizado para criação de métodos de _fallback_, caso um microserviço esteja _down_
 
-- MongoDB: Utilizado como o banco de dados da aplicação, por se assemelhar ao tipo de dados que vão trafegar na aplicação.
+- MongoDB: utilizado como o banco de dados da aplicação, por se assemelhar aos tipos de dados que vão trafegar na aplicação.
 
-- Swagger: Utilizado para documentar as chamadas do microserviço.
+- Swagger: utilizado para documentar as chamadas do microserviço.
 
-- AssertJ / JUnit / Mockito: Utilizados para a criação dos testes da aplicação.
+- AssertJ / JUnit / Mockito: utilizados para a criação dos testes da aplicação.
 
-- Spring Data MongoDB: Utilizado por conter uma interface de persistência que facilita a integração da aplicação com o banco de dados.
+- Spring Data MongoDB: utilizado por conter uma interface de persistência que facilita a integração da aplicação com o banco de dados.
 
-- Jackson: Utilizado na conversão de dados JSON e Java
+- Jackson: utilizado na conversão de dados JSON e Java.
 
 - ActiveMQ: Utilizado para a criação de um tópico `campaign-topic-notification` que realiza a notificação, aos sistemas inscritos, de mudanças nas campanhas.
 
@@ -38,7 +38,7 @@
 
 Para a criação do projeto, optei por utilizar alguns "padrões" de mercado, como o **Spring Boot**, que é bastante utilizado por ser um _framework_ de fácil utilização e com integrações para várias outras ferramentas. 
 
-Já para banco de dados, optei pelo MongoDB, por se assemelhar com os tipos de dados trafegados na aplicação, juntamente com ele foi utilizado o **Spring Data MongoDB** que facilita a realização de CRUD's no sistema.
+Já para banco de dados, optei pelo MongoDB, por se assemelhar com aos tipos de dados trafegados na aplicação, juntamente com ele foi utilizado o **Spring Data MongoDB** que facilita a realização de CRUD's no sistema.
 
 Já para a integração entre microserviços e estrategias de _fallback_ , segui na linha de utilizar os "padrões" do mercado
 e utilizei o **Feign** e o **Hystrix** respectivamente.
@@ -47,9 +47,9 @@ Para realizar a notificação a outros microserviços, optei pelo ActiveMQ, por 
 
 Para seguir os requisitos do projeto, foi criado um serviço CRUD, que realiza:
 
-* Busca todas as campanhas ativas, utilizando a data atual.
-* Busca a campanha por ID.
-* Busca de campanha ativas por time, utilizando o ID do time.
+* Busca de todas as campanhas ativas, utilizando a data atual.
+* Busca de campanha por ID.
+* Busca de campanhas ativas por time, utilizando o ID do time.
 * Criação uma nova campanha.
 * Atualização de uma campanha, utilizando o ID da campanha.
 * Deleção de uma campanha, utilizando o ID da campanha.
